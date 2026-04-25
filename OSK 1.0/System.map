@@ -1,0 +1,55 @@
+OSK Kernel Symbol Map
+=====================
+
+Memory.cpp
+- OskMemoryInit
+- OskMemoryAllocate
+- OskMemoryFree
+- OskMemoryGetStats
+
+FileSystem.cpp
+- OskFsMount
+- OskFsCreateFile
+- OskFsDeleteFile
+- OskFsWriteFile
+- OskFsReadFile
+- OskFsListFiles
+
+KNet.cpp
+- OskNetInit
+- OskNetConfigure
+- OskNetSend
+- OskNetInjectRx
+- OskNetReceive
+- OskNetDrainTx
+
+Scheduler.zig
+- OskSchedulerInit
+- OskSchedulerCreateTask
+- OskSchedulerBlockTask
+- OskSchedulerWakeTask
+- OskSchedulerTerminateTask
+- OskSchedulerNextTask
+- OskSchedulerYieldCurrent
+- OskSchedulerGetCurrentTaskId
+
+IPC.zig
+- OskIpcInit
+- OskIpcSend
+- OskIpcReceive
+
+SysCalls.zig
+- OskSyscallDispatch
+
+DriverManager.zig
+- OskDriverManagerInit
+- OskDriverRegister
+- OskDriverStart
+- OskDriverCountActive
+
+Interrupts.asm
+- osk_isr_common_stub
+- osk_irq_common_stub
+- osk_enable_interrupts
+- osk_disable_interrupts
+- osk_halt
